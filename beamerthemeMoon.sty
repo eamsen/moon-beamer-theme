@@ -1,0 +1,21 @@
+%% Moon beamer theme
+%% Author: Eugen Sawin <sawine@me73.com>
+
+\mode<presentation>
+\useoutertheme[subsection=false,shadow]{miniframes}
+\useinnertheme{default}
+\usefonttheme{default}
+%\usepackage{palatino}
+\usepackage{avant}
+
+\setbeamerfont{title like}{shape=\scshape}
+\setbeamerfont{frametitle}{shape=\scshape}
+\setbeamertemplate{frametitle}[default][center]
+\beamertemplatenavigationsymbolsempty
+
+\renewcommand{\(}{\begin{columns}}
+\renewcommand{\)}{\end{columns}}
+\newcommand{\<}[1]{\begin{column}{#1}}
+\renewcommand{\>}{\end{column}}
+\newcommand{\exalert}[1]{\textcolor{fgcolor}{\emph{#1}}}
+\mode<all>

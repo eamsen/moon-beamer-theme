@@ -1,0 +1,45 @@
+%% DarkMoon beamer colour theme
+%% Author: Eugen Sawin <sawine@me73.com>
+
+\definecolor{fgcolor}{rgb}{0.92, 0.92, 0.92}
+\definecolor{fgcolor2}{rgb}{0.2, 0.2, 0.2}
+\definecolor{fgcolor3}{rgb}{0.2, 0.55, 0.7}
+\definecolor{bgcolor}{rgb}{0.21, 0.21, 0.21}
+\definecolor{bgcolor2}{rgb}{0.13, 0.13, 0.13}
+
+\setbeamercolor{block title}{fg=fgcolor3, bg=bgcolor2}
+\setbeamercolor{block body}{fg=fgcolor, bg=bgcolor2}
+\setbeamercolor{block title example}{fg=fgcolor2, bg=bgcolor2}
+\setbeamercolor{block body example}{fg=fgcolor, bg=bgcolor2}
+\setbeamercolor{lower separation line head}{bg=bgcolor2} 
+\setbeamercolor{normal text}{fg=fgcolor,bg=bgcolor}
+\setbeamercolor{alerted text}{fg=orange} 
+\setbeamercolor{example text}{fg=fgcolor} 
+\setbeamercolor{structure}{fg=fgcolor} 
+\setbeamercolor{background canvas}{bg=bgcolor}
+\setbeamercolor{palette tertiary}{fg=fgcolor,bg=bgcolor!100} 
+\setbeamercolor{palette quaternary}{fg=fgcolor,bg=bgcolor!100}
+\setbeamercolor{section in toc}{fg=fgcolor3}
+
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  basicstyle=\ttfamily\color{fgcolor}\bfseries,
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{fgcolor},
+  identifierstyle=\color{gray},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+\lstset{language=XML}
